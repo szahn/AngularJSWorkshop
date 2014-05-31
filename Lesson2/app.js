@@ -6,6 +6,8 @@ function TweetCtrl($scope){
 		//var term = $scope.term;
 		console.debug(term);
 
-		$scope.results = ["bob", "mike"];
+		$scope.results = [
+			{name: "Mike", age: 32},
+			{name: "John", age: 18}];
 	}
 }
