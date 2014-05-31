@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<h1>AngularJS</h1>
+
+		<div class="container" ng-app ng-controller="TweetCtrl"/>
+			<input type="text" ng-model="term"/>
+			<!--<button ng-click="doSearch()">Search</button>-->
+			<button ng-click="doSearch(term)">Search</button>
+			<ul>
+				<!-- For each item in result, display the item in a list -->
+				<li ng-repeat="item in results">
+					{{ item }}
+				</li>
+			</ul>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
